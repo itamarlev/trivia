@@ -1,0 +1,9 @@
+<div class="wrapper wrapper-game">
+  <div class="question">{{ this.question }}</div>
+  <ul class="answers">
+    <li *ngFor="let answer of this.getAnswers();">
+      <a (click)="processAnswer(answer)"> {{ answer }} </a>
+    </li>
+  </ul>
+  <span class="score"></span>
+</div>
